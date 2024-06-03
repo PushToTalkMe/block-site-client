@@ -4,7 +4,7 @@ const nextConfig = {
   rewrites() {
     return [
       {
-        source: "/api/:path",
+        source: "/api/:path*",
         destination: "http://localhost:3000/:path*",
       },
     ];

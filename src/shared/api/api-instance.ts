@@ -7,7 +7,7 @@ export const apiInstance = axios.create({
   },
 });
 
-export const createInstance = <T>(
+export const createInstance = async <T>(
   config: AxiosRequestConfig,
   options?: AxiosRequestConfig,
 ): Promise<T> => {
